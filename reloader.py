@@ -10,7 +10,7 @@ server = Server()
 
 
 def watch(filepath):
-    server.watch(filepath, 'make html')
+    server.watch(filepath, 'sphinx-build -b html -d _build/doctrees . _build/html')
 
 
 watch('conf.py')
