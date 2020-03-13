@@ -20,3 +20,17 @@ docker run --rm \
      registry.gitlab.com/felixhummel/blag-build:master \
      ./reloader.py
 ```
+
+
+# Development
+```
+make
+```
+
+When done, wait for CI and pull again
+```
+git push
+python -m http.browser https://gitlab.com/felixhummel/blag-build/pipelines
+# ...
+docker pull registry.gitlab.com/felixhummel/blag-build:master
+```
