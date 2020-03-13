@@ -1,4 +1,5 @@
-Usage (in a [Sphinx](https://www.sphinx-doc.org/) directory):
+# Usage
+In a [Sphinx](https://www.sphinx-doc.org/) directory:
 ```
 docker run --rm \
      --volume "$PWD:/usr/src/blag" \
@@ -9,7 +10,9 @@ docker run --rm \
 
 HTML should be available in `_build/html`.
 
-Live-Reload while writing (locally):
+
+# Live-Reload
+While writing locally:
 ```
 docker run --rm \
      --volume "$PWD:/usr/src/blag" \
